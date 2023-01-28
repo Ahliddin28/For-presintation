@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+
+
+    .swiper {
+      width: 100%;
+      height:100vh;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+
+    .swiper-slide img {
+      /* display: block; */
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+<center><h1 style="font-size: 50px;">My future plans</h1></center>
+  <!-- Swiper -->
+  <center>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="ielts.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="271_821257pg.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="6bfe0ac4-902c-4800-a1f6-d2fea25a961b_large.jpeg " />
+        </div>
+        <div class="swiper-slide">
+          <img src="United-States-of-America.jpg.optimal.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </center>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop:true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
