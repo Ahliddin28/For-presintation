@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .box{
+      height: 100vh;
+    }
+    .swiper-slide {
+      width: 75%;
+      height: 450px;
+      background-position: center;
+      text-align: center;
+      font-size: 18px;
+      /* background: #fff; */
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 75%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .container{
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+  <center>
+    <div class="box">
+      <h1>1.Big Ben Building</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="bigben.webp" alt=""></div>
+          <div class="swiper-slide"><img src="bigbrn2.webp" alt=""></div>
+          <div class="swiper-slide"><img src="bigben3.webp" alt=""></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+  </div>
+    </div><br><br><br>
+    <div class="box">
+      <h1>2.London Eye</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="londoneye.webp" alt=""></div>
+          <div class="swiper-slide"><img src="londoneye2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="londoneye3.jpg" alt=""></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+  </div>
+    </div>
+<br><br><br>
+    <div class="box">
+      <h1>3.Tower Bridge</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="tower3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="tower.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="tower2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="1024px-Opening_of_Tower_Bridge_1895.jpg" alt=""></div>
+   
+
+        </div>
+        <div class="swiper-pagination"></div>
+  </div>
+    </div>
+    <br><br><br>
+    <div class="box">
+      <h1>3.Tower Bridge</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="stadium3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadiium2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium4.webp" alt=""></div>
+          <div class="swiper-slide"><img src="stadium5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium6.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium8.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium9.jpg" alt=""></div> 
+          <div class="swiper-slide"><img src="stadium10.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium11.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="fulham.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="stadium13.jpg" alt=""></div>
+   
+
+        </div>
+        <div class="swiper-pagination"></div>
+  </div>
+    </div>
+   
+   
+  </center>
+  </div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      
+    },
+  });
+</script>
+</body>
+</html>
